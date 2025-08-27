@@ -1,0 +1,48 @@
+.ss-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --icon-scale: 1;
+
+    .ss-big-circle {
+        width: calc(var(--icon-size) * var(--icon-scale));
+        height: calc(var(--icon-size) * var(--icon-scale));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #262626;
+        box-shadow: 0 0 20px #c9ff3321 inset;
+        position: relative;
+        overflow: hidden;
+
+        .ss-circle {
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #262626;
+            border: 1px solid #c9ff3331;
+            box-shadow: 0 0 20px #c9ff3331 inset;
+
+            img {
+                width: 50%;
+                box-shadow: 40px 42px 15px 4px #1C1C1C, -40px 42px 15px 4px #1C1C1C, 0 42px 15px 4px #1C1C1C;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .ss-icon-container {
+        --icon-scale: 0.79;
+    }
+}
+
+@media (max-width: 992px) {
+    .ss-icon-container {
+        --icon-scale: 0.65;
+    }
+}

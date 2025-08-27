@@ -1,0 +1,44 @@
+.useCaseCard {
+    width: 16.35vw;
+    min-height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid var(--second-color);
+    text-align: center;
+
+    .useCaseDescription {
+        padding-top: 24px;
+        font-size: 20px;
+        color: var(--text-color);
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .useCaseCard {
+        width: 18.06vw;
+        padding: 24px;
+        border-radius: 12px;
+        min-height: 195px;
+
+        .useCaseDescription {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .useCaseCard {
+        width: 39.49vw;
+        max-width: 240px;
+        min-height: 173px;
+
+        .useCaseDescription {
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    }
+}

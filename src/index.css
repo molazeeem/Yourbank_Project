@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1C1C1C;
+  --second-color: #262626;
+  --text-color: #FFFFFF;
+  --button-keyworld-color: #CAFF33;
+  --hero-paragraph-color: #E4E4E7;
+  --button-background-color: #22251B;
+  --third-color: #1A1A1A;
+  --eighth-color: #D1FF4D;
+  --paragraph-color: #B3B3B3;
+  --tenth-color: #191919;
+  --card-title-color: #4C4C4D;
+  --input-color: #59595A;
+  --login-paragraph: #bfbfbf;
+}
+
+/*  Lexend Fonts */
+@font-face {
+  font-family: LexendLight;
+  src: url("/assets/fonts/Lexend/Lexend-Light.ttf");
+}
+
+@font-face {
+  font-family: LexendRegular;
+  src: url("/assets/fonts/Lexend/Lexend-Regular.ttf");
+}
+
+@font-face {
+  font-family: LexendMedium;
+  src: url("/assets/fonts/Lexend/Lexend-Medium.ttf");
+}
+
+@font-face {
+  font-family: LexendSemiBold;
+  src: url("/assets/fonts/Lexend/Lexend-SemiBold.ttf");
+}
+
+.LexendLight {
+  font-family: LexendLight;
+}
+
+.LexendRegular {
+  font-family: LexendRegular;
+}
+
+.LexendMedium {
+  font-family: LexendMedium;
+}
+
+.LexendSemiBold {
+  font-family: LexendSemiBold;
+}
+
+.section-MarginBottom {
+  margin-bottom: 150px !important;
+}
+
+.hero-mt,
+.homeHero-mt {
+  margin-top: 198px !important;
+}
+
+
+.section-MarginBottom {
+  margin-bottom: 150px !important;
+}
+
+.ProtectYou-MarginBottom {
+  margin-bottom: 232px !important;
+}
+
+.hero-mt,
+.homeHero-mt {
+  margin-top: 148px !important;
+}
+
+
+.white-space {
+  margin-left: 8.4375vw;
+  margin-right: 8.4375vw;
+}
+
+@media screen and (max-width:1440px) {
+  .white-space {
+    margin-left: 5.5555vw;
+    margin-right: 5.5555vw;
+  }
+
+  .section-MarginBottom {
+    margin-bottom: 120px !important;
+  }
+
+  .ProtectYou-MarginBottom {
+    margin-bottom: 182px !important;
+  }
+
+  .hero-mt {
+    margin-top: 123px !important;
+  }
+
+  .homeHero-mt {
+    margin-top: 103px !important;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .white-space {
+    margin-left: 3.0769vw;
+    margin-right: 3.0769vw;
+  }
+
+  .section-MarginBottom {
+    margin-bottom: 80px !important;
+  }
+
+  .ProtectYou-MarginBottom {
+    margin-bottom: 80px !important;
+  }
+
+  .homeHero-mt {
+    margin-top: 150px !important;
+  }
+
+  .hero-mt {
+    margin-top: 98px !important;
+  }
+}

@@ -1,0 +1,526 @@
+.ss-homeHero {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding-top: 56.65px;
+    overflow: hidden;
+
+    .ss-descriptionDiv {
+        width: 43.0197vw;
+
+        .ss-firstDiv {
+            width: fit-content;
+            display: flex;
+            background-color: var(--second-color);
+            border-radius: 61px;
+            padding: 10px 20px 10px 12px;
+            margin-bottom: 20px;
+
+            img {
+                margin-right: 8px;
+                width: 24px;
+            }
+
+            p {
+                color: white;
+                margin: 0;
+                font-size: 18px;
+            }
+        }
+
+        .ss-headingContainer {
+            h1 {
+                color: white;
+                line-height: 150%;
+                margin-bottom: 16px;
+                font-size: 48px;
+
+                span {
+                    color: var(--button-keyworld-color);
+                }
+            }
+        }
+
+        p {
+            color: var(--paragraph-color);
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            background-color: var(--button-keyworld-color);
+            border-radius: 82px;
+            padding: 13px 30px;
+
+            a {
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ss-exchangeContainer {
+        width: 36.5609vw;
+
+        .ss-exchange {
+            width: 28vw;
+            height: 624.48px;
+            padding: 33px;
+            border-radius: 10.5px;
+            border: 0.8px solid var(--button-background-color);
+            position: relative;
+
+            .ss-title {
+                color: white;
+                margin-bottom: 17px;
+                font-size: 17.34px;
+            }
+
+            .ss-transactions {
+                height: 200px;
+
+                .ss-transactionsContainer {
+                    position: relative;
+
+                    .ss-transaction {
+                        border: 0.87px solid var(--second-color);
+                        padding: 13.87px 20.81px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        border-radius: 10.4px;
+                        position: absolute;
+                        background-color: var(--primary-color);
+
+                        .ss-transaction-info {
+                            display: flex;
+                            align-items: center;
+
+                            .ss-iconContainer {
+                                width: 38.15px;
+                                height: 38.15px;
+                                border-radius: 50%;
+                                background-color: var(--button-keyworld-color);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 8px;
+
+                                img {
+                                    width: 20.81px;
+                                }
+                            }
+
+                            .ss-transaction-info-des {
+                                color: white;
+
+                                .ss-transaction-info-des-title {
+                                    font-size: 15.61px;
+                                }
+
+                                .ss-transaction-info-des-name {
+                                    font-size: 17.34px;
+                                }
+                            }
+                        }
+
+                        span {
+                            color: white;
+                            font-size: 20.81px;
+                        }
+                    }
+
+                    .ss-transaction:nth-child(1) {
+                        z-index: 3;
+                        width: 100%;
+                    }
+
+                    .ss-transaction:nth-child(2) {
+                        z-index: 2;
+                        opacity: 0.7;
+                        width: 90%;
+                        top: 50px;
+                        left: 5%;
+                    }
+
+                    .ss-transaction:nth-child(3) {
+                        z-index: 1;
+                        opacity: 0.5;
+                        width: 80%;
+                        top: 100px;
+                        left: 10%;
+                    }
+                }
+            }
+
+            .ss-moneyExchange {
+                margin-top: 26px;
+
+                .ss-title {
+                    color: white;
+                    font-size: 17.34px;
+                }
+
+                .ss-exchangeTable {
+                    border: 0.87px solid var(--second-color);
+                    border-radius: 10.4px;
+                    height: 177px;
+                    background-color: var(--primary-color);
+                    display: flex;
+                    justify-content: space-between;
+
+                    .ss-exchangeTable-item {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .ss-exchangeTable-item-info {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 17.34px;
+                            height: 100%;
+
+                            .ss-contry {
+                                margin-bottom: 8.67px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                .ss-flag {
+                                    margin-right: 8.67px;
+                                    width: 34.68px;
+                                }
+
+                                .ss-contryName {
+                                    color: white;
+                                    font-size: 15.61px;
+                                }
+                            }
+
+                            .ss-cruncy {
+                                color: var(--hero-paragraph-color);
+                                font-size: 13.87px;
+                            }
+                        }
+
+                        .ss-exchangeTable-item-info.ss-first,
+                        .ss-amount.ss-first {
+                            border-right: 0.87px solid var(--second-color);
+                        }
+
+                        .ss-amount {
+                            color: white;
+                            font-size: 17.34px;
+                            border-top: 0.87px solid var(--second-color);
+                            padding: 26px 17.34px;
+                        }
+                    }
+                }
+
+                .ss-exchangeButton {
+                    margin-top: 25.14px;
+                    background-color: var(--button-background-color);
+                    color: var(--eighth-color);
+                    border-radius: 71.1px;
+                    padding: 13.87px 26.01px;
+                    width: 100%;
+                    border: none;
+                    font-size: 15.61px;
+                }
+            }
+
+            .ss-abstractImg {
+                position: absolute;
+                top: 0;
+                right: -9.7369vw;
+                z-index: 2;
+
+                .ss-abstractImg-container {
+                    width: 9.7369vw;
+                    overflow: hidden;
+
+                    img {
+                        width: 21.7682vw;
+                        transform: translateX(-12.03125vw);
+                    }
+                }
+            }
+
+            .ss-income {
+                padding: 13.87px 17.34px;
+                border-radius: 10.4px;
+                background-color: var(--button-background-color);
+                width: fit-content;
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                display: flex;
+                align-items: center;
+
+                .ss-iconContainer {
+                    width: 38.15px;
+                    height: 38.15px;
+                    border-radius: 50%;
+                    background-color: var(--button-keyworld-color);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 8px;
+
+                    img {
+                        width: 20.81px;
+                    }
+                }
+
+                .ss-income-info {
+                    color: white;
+
+                    .ss-income-info-amount {
+                        font-size: 17.34px;
+                    }
+
+                    .ss-p {
+                        color: var(--hero-paragraph-color);
+                        font-size: 13.87px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+
+        .ss-supportedCurrencyContainer {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 7.0276vw;
+
+            .ss-supportedCurrency {
+                background-color: var(--button-background-color);
+                padding: 8.67px;
+                border-radius: 47.69px;
+                margin-top: 21.19px;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .ss-supportedCurrencyTitle {
+                    color: white;
+                    font-size: 15.61px;
+                    margin-right: 10.87px;
+                    margin-left: 20.81px;
+                }
+
+                .ss-currContainer {
+                    display: flex;
+                    background-color: var(--third-color);
+                    border-radius: 47.69px;
+                    padding: 8.76px;
+
+                    .ss-currIconContainer {
+                        width: 34.68px;
+                        height: 34.68px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--second-color);
+                        margin-right: 6.94px;
+
+                        .ss-currIconContainerIcon {
+                            width: 11.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ss-homeHero .ss-descriptionDiv .ss-firstDiv img {
+        width: 20px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv .ss-firstDiv p {
+        font-size: 14px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv .ss-headingContainer h1 {
+        font-size: 38px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv .ss-headingContainer p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv button {
+        padding: 14px 24px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv button a {
+        font-size: 14px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer {
+        width: 37.5826vw;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange {
+        padding: 27.55px;
+        width: 32vw;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-title {
+        font-size: 13.77px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction {
+        padding: 11.02px 16.53px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-iconContainer {
+        width: 30.35px;
+        height: 30.35px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-iconContainer img {
+        width: 16.57px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-transaction-info-des .ss-transaction-info-des-title {
+        font-size: 12.4px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-transaction-info-des .ss-transaction-info-des-name {
+        font-size: 13.77px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info span {
+        font-size: 16.53px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-income .ss-iconContainer {
+        width: 30.35px;
+        height: 30.35px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-income .ss-income-info .ss-income-info-amount {
+        font-size: 13.77px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-income .ss-income-info .ss-p {
+        font-size: 11.02px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-abstractImg .ss-abstractImg-container img {
+        width: 20.3888vw;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-title {
+        font-size: 13.77px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-exchangeTable .ss-exchangeTable-item .ss-exchangeTable-item-info .ss-contry .ss-flag {
+        width: 27.62px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-exchangeTable .ss-exchangeTable-item .ss-exchangeTable-item-info .ss-contry .ss-contryName {
+        font-size: 12.4px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-exchangeTable .ss-exchangeTable-item .ss-exchangeTable-item-info .ss-cruncy {
+        font-size: 11.02px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-exchangeTable .ss-exchangeTable-item .ss-exchangeTable-item-info .ss-amount {
+        font-size: 13.77px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-moneyExchange .ss-exchangeButton {
+        font-size: 12.4px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-supportedCurrencyContainer {
+        margin-right: 6.220vw;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-supportedCurrencyContainer .ss-supportedCurrency .ss-supportedCurrencyTitle {
+        font-size: 12.4px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-supportedCurrencyContainer .ss-supportedCurrency .ss-currContainer .ss-currIconContainer {
+        width: 27.62px;
+        height: 27.62px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ss-homeHero {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .ss-homeHero .ss-descriptionDiv {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ss-homeHero .ss-descriptionDiv .ss-firstDiv {
+        margin: 0 auto 20px;
+    }
+
+    .ss-homeHero .ss-descriptionDiv .ss-headingContainer h1 {
+        font-size: 28px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange {
+        width: 100%;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-iconContainer {
+        width: 22.6px;
+        height: 22.6px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction .ss-transaction-info .ss-iconContainer img {
+        width: 12.34px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-transactions .ss-transactionsContainer .ss-transaction span {
+        font-size: 12.31px;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-income {
+        left: 0;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-abstractImg {
+        top: -40px;
+        left: calc(100vw - 110px);
+        width: fit-content;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-abstractImg .ss-abstractImg-container {
+        width: fit-content;
+        overflow: visible;
+    }
+
+    .ss-homeHero .ss-exchangeContainer .ss-exchange .ss-abstractImg .ss-abstractImg-container img {
+        width: 220px;
+    }
+
+}

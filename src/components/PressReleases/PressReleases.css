@@ -1,0 +1,142 @@
+.WN-press-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    .WN-press-card {
+        width: 39.75vw;
+        background-color: var(--primary-color);
+        padding: 30px;
+        border-radius: 10px;
+        color: var(--text-color);
+        border-radius: 40px 16px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--second-color);
+
+        img {
+            width: 100%;
+        }
+
+        .presssCardDateAndLocation {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+
+            .pressCardLocation {
+                width: 161px;
+                height: 43px;
+                border-radius: 68px;
+                border: 1px solid var(--second-color);
+                font-size: 18px;
+                text-align: center;
+                background-color: var(--third-color);
+                color: var(--paragraph-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .pressCardDate {
+                width: 182px;
+                height: 43px;
+                border-radius: 68px;
+                border: 1px solid var(--second-color);
+                font-size: 18px;
+                text-align: center;
+                background-color: var(--third-color);
+                color: var(--paragraph-color);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .pressCardTitle {
+            font-size: 24px;
+            margin-top: 51px;
+        }
+
+        .pressCardDescribe {
+            font-size: 18px;
+            color: var(--paragraph-color);
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .WN-press-cards {
+        .WN-press-card {
+            width: 43.75vw;
+
+            .presssCardDateAndLocation {
+                margin-top: 14px;
+
+                .pressCardLocation {
+                    width: 143px;
+                    height: 36px;
+                    font-size: 14px;
+                }
+
+                .pressCardDate {
+                    width: 161px;
+                    height: 33px;
+                    font-size: 14px;
+                }
+            }
+
+            .pressCardTitle {
+                font-size: 20px;
+                margin-top: 40px;
+            }
+
+            .pressCardDescribe {
+                font-size: 16px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .WN-press-cards {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+
+        .WN-press-card {
+            width: 91.79vw !important;
+            max-width: 673px;
+
+            .presssCardDateAndLocation {
+                margin-top: 10px;
+
+                .pressCardLocation {
+                    width: 124px;
+                    height: 33px;
+                    font-size: 14px;
+                }
+
+                .pressCardDate {
+                    width: 140px;
+                    height: 33px;
+                    font-size: 14px;
+                }
+            }
+
+            .pressCardTitle {
+                font-size: 18px;
+                margin-top: 30px;
+            }
+
+            .pressCardDescribe {
+                font-size: 14px;
+            }
+        }
+    }
+}

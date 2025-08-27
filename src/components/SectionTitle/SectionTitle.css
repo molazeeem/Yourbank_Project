@@ -1,0 +1,149 @@
+.ST-background {
+    background-color: var(--third-color);
+    padding-bottom: 80px;
+}
+
+.ST-container {
+    display: flex;
+    justify-content: space-between;
+
+    .ST-title {
+        h1 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 150%;
+            margin-bottom: 14px;
+
+            .whitetitle {
+                color: var(--text-color);
+            }
+
+            .greentitle {
+                color: var(--button-keyworld-color);
+            }
+        }
+
+        p {
+            color: var(--paragraph-color);
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    .filter-IB {
+        align-self: flex-end;
+        max-width: 386px;
+        background-color: var(--primary-color);
+        height: 83px;
+        border-radius: 82px;
+        border: 1px solid var(--second-color);
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 177px;
+            height: 55px;
+            border: none;
+            background-color: transparent;
+            border-radius: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .filter-active {
+            background-color: var(--button-keyworld-color);
+            color: var(--primary-color);
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.whiteRevers {
+    color: var(--text-color) !important;
+}
+
+.greenRevers {
+    color: var(--button-keyworld-color) !important;
+}
+
+@media screen and (max-width:1440px) {
+    .ST-backgroun {
+        padding-bottom: 60px;
+    }
+
+    .ST-container {
+        gap: 150px;
+
+        .ST-title {
+            max-width: 71.5277% !important;
+
+            h1 {
+                font-size: 38px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .filter-IB {
+            max-width: 299px;
+            height: 65px;
+            padding: 12px;
+
+            button {
+                width: 136px;
+                height: 41px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .ST-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        .ST-title {
+            max-width: 100% !important;
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .filter-IB {
+            align-self: center;
+            max-width: 299px;
+            height: 65px;
+
+            .filter-active {
+                background-color: var(--button-keyworld-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+}

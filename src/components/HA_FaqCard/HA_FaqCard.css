@@ -1,0 +1,240 @@
+.faqCard {
+  padding: 50px 50px 5.4vw 50px;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 39.7vw;
+  gap: 30px;
+  background-color: var(--third-color);
+}
+
+.FAQ-title {
+  color: var(--text-color);
+  font-size: 20px;
+  width: 100%;
+}
+
+.FAQ-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--input-color);
+}
+
+.FAQ-des {
+  color: var(--paragraph-color);
+  font-size: 18px;
+  max-width: 682.5px;
+}
+
+.aa-faq-container-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 30px;
+}
+
+.aa-faq-container-card .faqCard:nth-child(n+5) {
+  display: none;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(n+5) {
+  display: flex;
+}
+
+.aa-faq-btn {
+  width: 193px;
+  padding: 18px 24px;
+  background-color: var(--third-color);
+  border: 1px solid var(--second-color);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  margin: 0 auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.aa-hide-content {
+  display: none;
+}
+
+.aa-show-less {
+  display: none;
+}
+
+.aa-change-content {
+  width: 193px;
+  padding: 18px 24px;
+  background-color: var(--third-color);
+  border: 1px solid var(--second-color);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  margin: 20px auto 0 auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.aa-change-content img {
+  width: 22px;
+  transform: rotate(180deg);
+}
+
+.aa-faq-container-card .faqCard:nth-child(3),
+.aa-faq-container-card .faqCard:nth-child(4) {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: linear-gradient(var(--third-color), var(--third-color)) padding-box,
+    linear-gradient(to bottom, #262626, #1C1C1C) border-box !important;
+  border-bottom: none;
+}
+
+.aa-faq-btn img {
+  width: 22px;
+}
+
+.aa-container-normal-height {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.aa-faq-container-card .faqCard.aa-card-shadow:nth-child(4),
+.aa-faq-container-card .faqCard.aa-card-shadow:nth-child(3) {
+  border: 1px solid var(--second-color);
+}
+
+@media screen and (max-width:1440px) {
+  .aa-faq-container-card {
+    gap: 20px;
+  }
+
+  .aa-change-content,
+  .aa-faq-btn {
+    width: 155px;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .aa-faq-btn {
+    margin-top: 5px;
+  }
+
+  .faqCard {
+    width: 41.6vw;
+    padding: 40px 40px 64px 40px;
+    border-radius: 10px;
+    gap: 20px;
+    min-height: 295px;
+  }
+
+  .FAQ-des {
+    font-size: 16px;
+  }
+
+  .FAQ-title {
+    width: 32.8vw;
+    font-size: 18px;
+  }
+
+  .FAQ-divider {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .aa-faq-container-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .faqCard {
+    width: 100%;
+    padding: 30px !important;
+    min-height: 335px;
+    gap: 20px;
+  }
+
+  .FAQ-des {
+    width: 71vw;
+    font-size: 14px;
+  }
+
+  .FAQ-title {
+    width: 75vw;
+    font-size: 16px;
+  }
+
+  .aa-faq-container-card .faqCard:nth-child(3) {
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+  }
+}
+
+/* ========================================================= */
+/* 🔥 Smooth Animations for Load More / Show Less */
+/* ========================================================= */
+
+@keyframes faqFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes faqFadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Animate in when new FAQs appear */
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(n+5) {
+  animation: faqFadeInUp 450ms cubic-bezier(.22, 1, .36, 1) both;
+}
+
+/* Subtle stagger for premium effect */
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(5) {
+  animation-delay: 20ms;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(6) {
+  animation-delay: 40ms;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(7) {
+  animation-delay: 60ms;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(8) {
+  animation-delay: 80ms;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(9) {
+  animation-delay: 100ms;
+}
+
+.aa-faq-container-card.aa-container-normal-height .faqCard:nth-child(10) {
+  animation-delay: 120ms;
+}
+
+/* Animate out when collapsing */
+.aa-faq-container-card.aa-collapsing .faqCard:nth-child(n+5) {
+  animation: faqFadeOutDown 250ms ease both;
+}

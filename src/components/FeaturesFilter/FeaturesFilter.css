@@ -1,0 +1,95 @@
+.aa-features-filter {
+  width: max-content;
+}
+
+.aa-filter {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.aa-filter-button {
+  all: unset;
+  position: relative;
+  width: 208px;
+  text-align: center;
+  background-color: var(--third-color);
+  padding: 18px 0;
+  border: 1px solid var(--second-color);
+  border-radius: 100px;
+  color: var(--text-color);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.aa-filter-button:hover {
+  color: var(--button-keyworld-color);
+}
+
+.aa-filter-underline {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--button-keyworld-color);
+}
+
+@media screen and (max-width:1440px) {
+  .aa-filter {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width:992px) {
+
+  .aa-features-filter {
+    width: 93vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-inline: 16px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 16px;
+    mask-image: linear-gradient(to right, transparent 0, black 16px, black calc(100% - 16px), transparent 100%);
+  }
+
+  .aa-features-filter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .aa-features-filter {
+    scrollbar-width: none;
+  }
+
+  .aa-filter {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .aa-filter-button {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 140px;
+    padding: 14px 20px;
+    margin: 0;
+    scroll-snap-align: center;
+  }
+
+  .aa-filter-underline {
+    bottom: -4px;
+  }
+}

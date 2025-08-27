@@ -1,0 +1,67 @@
+.rh-value-Container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 80px;
+    justify-content: center;
+
+    .rh-h3 {
+        font-size: 58px;
+        color: var(--card-title-color);
+        white-space: nowrap;
+        padding-bottom: 30px;
+    }
+
+    .rh-p {
+        font-size: 18px;
+        color: var(--paragraph-color);
+    }
+
+    .rh-ValueCard {
+        /* width: 39.479vw; */
+        border-left: 1px solid var(--button-keyworld-color);
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .rh-value-Container {
+        gap: 60px;
+
+        .rh-h3 {
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+
+        .rh-p {
+            font-size: 16px;
+        }
+
+        .rh-ValueCard {
+            /* width: 42.36vw; */
+            padding-left: 24px;
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .rh-value-Container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        .rh-h3 {
+            font-size: 30px;
+            padding-bottom: 14px;
+        }
+
+        .rh-p {
+            font-size: 14px;
+        }
+
+        .rh-ValueCard {
+            width: 100%;
+            padding-left: 20px;
+        }
+    }
+
+}

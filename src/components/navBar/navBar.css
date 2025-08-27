@@ -1,0 +1,263 @@
+.ss-navShow {
+    width: 100vw !important;
+    border-radius: 0 !important;
+    top: 0;
+    padding-left: 8.4375vw !important;
+    padding-right: 8.4375vw !important;
+}
+
+.ss-nav,
+.ss-navShow {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
+    height: 95px;
+    border-radius: 100px;
+    position: fixed;
+    width: calc(100vw - 8.4375vw - 8.4375vw);
+    z-index: 5;
+
+    transition:
+        width .38s cubic-bezier(.22, 1, .36, 1),
+        padding .38s cubic-bezier(.22, 1, .36, 1),
+        border-radius .38s cubic-bezier(.22, 1, .36, 1),
+        top .38s cubic-bezier(.22, 1, .36, 1),
+        border-color .28s ease,
+        box-shadow .28s ease,
+        backdrop-filter .28s ease,
+        -webkit-backdrop-filter .28s ease;
+    will-change: width, padding, border-radius, top, backdrop-filter;
+}
+
+.ss-navLogo {
+    width: 155.83px;
+    will-change: transform, opacity;
+}
+
+.ss-navUl {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    justify-content: space-between;
+}
+
+.ss-navUl a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.ss-li {
+    position: relative;
+}
+
+.ss-link {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 82px;
+}
+
+.ss-link-label {
+    position: relative;
+    z-index: 2;
+}
+
+.ss-link-active {
+    background: transparent;
+}
+
+.ss-active-pill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--second-color);
+    border-radius: 82px;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .25), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.ss-buttonsDiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ss-buttonsDiv button {
+    background: none;
+    border: none;
+}
+
+.ss-buttonsDiv button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.ss-buttonsDiv .ss-button-active {
+    color: var(--primary-color);
+    background-color: var(--button-keyworld-color);
+    border-radius: 82px;
+    padding: 14px 30px;
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ss-menuIcon {
+    width: 56px;
+}
+
+.ss-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .25);
+    opacity: 0;
+    z-index: 4;
+}
+
+.ss-mobile-nav {
+    display: none;
+    background-color: var(--primary-color);
+    padding: 16px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 6;
+    transform: translateX(calc(-100vw - 72px));
+}
+
+.ss-mobile-nav-iconContainer {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button-keyworld-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.ss-mobile-nav-iconContainer img {
+    width: 22px;
+    height: 22px;
+    transform: rotate(45deg);
+}
+
+.ss-mobile-navList {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ss-mobile-navList li {
+    margin: 16px;
+}
+
+.ss-mobile-navList li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ss-mobile-navList .ss-link-active {
+    background-color: var(--second-color);
+    padding: 12px 24px;
+    border-radius: 82px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .ss-nav,
+    .ss-navShow {
+        padding: 0 24px;
+        width: calc(100vw - 5.5555vw - 5.5555vw);
+        height: 73px;
+    }
+
+    .ss-navShow {
+        padding-left: 5.5555vw !important;
+        padding-right: 5.5555vw !important;
+    }
+
+    .ss-buttonsDiv {
+        display: flex;
+        gap: 20px;
+    }
+
+    .ss-navLogo {
+        width: 116.86px;
+    }
+
+    .ss-navUl a {
+        font-size: 14px;
+    }
+
+    .ss-link {
+        padding: 10px 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .ss-nav,
+    .ss-navShow {
+        width: calc(100vw - 3.0769vw - 3.0769vw);
+        padding: 0 14px;
+        height: 68px;
+    }
+
+    .ss-navShow {
+        padding-left: 3.0769vw !important;
+        padding-right: 3.0769vw !important;
+    }
+
+    .ss-navLogo {
+        width: 101.29px;
+    }
+
+    .ss-navUl,
+    .ss-buttonsDiv {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: fit-content;
+    }
+
+    .ss-menuIcon {
+        width: 56px;
+    }
+
+    .ss-mobile-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .ss-nav,
+    .ss-navShow {
+        transition: none;
+    }
+}

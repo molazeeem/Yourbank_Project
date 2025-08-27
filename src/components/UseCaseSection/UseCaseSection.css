@@ -1,0 +1,17 @@
+.ss-test {
+    width: 500px;
+    height: 200px;
+
+    .ss-test1 {
+        border-radius: 14px;
+        height: 100%;
+        padding: 50px;
+        border: 1px solid transparent;
+        background: linear-gradient(#1a1a1a, #1a1a1a) padding-box,
+            linear-gradient(0deg, #1a1a1a, #ff0000) border-box;
+    }
+}
+
+.ss-testMargin {
+    height: 100px;
+}

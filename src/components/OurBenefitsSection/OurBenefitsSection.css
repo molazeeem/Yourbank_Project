@@ -1,0 +1,46 @@
+.Ob-section-container {
+    .OB-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+        transition: gap 0.9s ease;
+        justify-content: center;
+    }
+}
+
+.ou-border-design {
+    border-radius: 20px 50px 20px 50px;
+}
+
+.ou-second-border-design {
+    border-radius: 50px 20px 50px 20px;
+}
+
+@media screen and (max-width:1440px) {
+    .Ob-section-container {
+        .OB-card-container {
+            gap: 60px;
+            transition: gap 0.9s ease;
+        }
+    }
+
+    .ou-border-design {
+        border-radius: 14px 40px 14px 40px;
+    }
+
+    .ou-second-border-design {
+        border-radius: 40px 14px 40px 14px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .Ob-section-container {
+        .OB-card-container {
+            gap: 48px;
+            grid-template-columns: 1fr;
+            transition: grid 0.9s ease;
+            transition: gap 0.9s ease;
+            transition: padding 0.9s ease;
+        }
+    }
+}

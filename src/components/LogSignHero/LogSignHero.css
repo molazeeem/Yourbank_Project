@@ -1,0 +1,310 @@
+.rh_containr {
+    width: 69.063vw;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 100px 0;
+    border: 1px solid var(--second-color);
+
+    .rh-LS-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        filter: grayscale(100%);
+        opacity: 0.1;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+    .rh-LS-background-TopRight {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 342px;
+        height: 325px;
+    }
+
+    .rh_titelPart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 53.4375vw;
+        padding-bottom: 80px;
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            color: var(--button-keyworld-color);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            color: var(--login-paragraph);
+        }
+    }
+
+    .rh_inputPart {
+        width: 53.4375vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            input {
+                width: 25.9375vw;
+                border: 1px solid var(--second-color);
+                border-radius: 88px;
+                font-size: 18px;
+                color: var(--input-color);
+                background-color: var(--third-color);
+                padding: 24px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .rh_forgotPart {
+            width: 53.4375vw;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            margin-top: 40px;
+        }
+
+        .rh_forgotPart a {
+            color: var(--text-color);
+        }
+
+        .rh_logBtn {
+            width: 26.9791vw;
+            border: none;
+            margin-top: 40px;
+            border-radius: 63px;
+            text-align: center;
+            padding: 18px 20px;
+            font-size: 18px;
+            color: var(--second-color);
+            background-color: var(--button-keyworld-color);
+            cursor: pointer;
+        }
+
+        .rh_sinBtn {
+            width: 26.9791vw;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 63px;
+            text-align: center;
+            padding: 18px 20px;
+            font-size: 18px;
+            color: var(--text-color);
+            background-color: var(--second-color);
+            cursor: pointer;
+
+        }
+
+        .rh_comment {
+            width: 26.9791vw;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .rh_Line {
+                flex: 1;
+                height: 1px;
+                background-color: var(--paragraph-color)
+            }
+
+            .rh_text {
+                font-size: 18px;
+                text-align: center;
+                vertical-align: middle;
+                color: var(--paragraph-color);
+            }
+        }
+
+        .rh_social {
+            width: 26.9791vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            align-items: center;
+
+            .logSignPageIcon {
+                padding-top: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1440px) {
+    .rh_containr {
+        width: 73.888vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 80px 0;
+
+        .rh-LS-background-TopRight {
+            max-width: 256px;
+            height: 243px;
+        }
+
+        .rh_titelPart {
+            padding-bottom: 60px;
+            width: 46.11111vw;
+
+            h1 {
+                font-size: 38px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .rh_inputPart {
+            width: 46.11111vw;
+            display: flex;
+
+            form {
+                input {
+                    width: 22.2222vw;
+                    font-size: 16px;
+                    padding: 20px;
+                }
+            }
+
+            .rh_logBtn {
+                width: 28.05555vw;
+                margin-top: 30px;
+                padding: 14px 24px;
+                font-size: 14px;
+            }
+
+            .rh_sinBtn {
+                width: 28.05555vw;
+                padding: 14px 24px;
+                font-size: 14px;
+            }
+
+            .rh_comment {
+                width: 28.05555vw;
+                gap: 16px;
+                margin-bottom: 24px;
+
+                .rh_Line {
+                    flex: 1;
+                    height: 1px;
+                }
+
+                .rh_text {
+                    font-size: 14px;
+                }
+            }
+
+            .rh_social {
+                width: 28.05555vw;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .rh_containr {
+        width: 91.79vw;
+        border-radius: 20px;
+        padding: 30px;
+
+        .rh-LS-background-TopRight {
+            max-width: 167px;
+            height: 159px;
+        }
+
+        .rh_titelPart {
+            padding-bottom: 40px;
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .rh_inputPart {
+            width: 100%;
+
+            form {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                    padding: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .rh_logBtn {
+                /* width: 76.4102vw; */
+                width: 100%;
+                margin-top: 24px;
+                font-size: 14px;
+            }
+
+            .rh_sinBtnLink {
+                width: 100%;
+            }
+
+            .rh_sinBtn {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .rh_comment {
+                width: 100%;
+                gap: 16px;
+                margin-bottom: 24px;
+
+                .rh_text {
+                    font-size: 14px;
+                }
+            }
+
+            .rh_social {
+                width: 100%;
+                gap: 24px;
+            }
+        }
+    }
+}

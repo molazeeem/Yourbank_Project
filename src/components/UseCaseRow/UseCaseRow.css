@@ -1,0 +1,234 @@
+.ss-useCases {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .WN_UseCaseCards {
+        width: 38.96vw;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: var(--primary-color);
+        background-image: url("/Bank_Project/assets/images/AbstractDesign/AbstractDesign.webp");
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    .ss-useCasesIndivs {
+        width: 38.95vw;
+
+        .ss-useCasesIndivsTitle {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 14px;
+        }
+
+        .ss-useCasesIndivsDes {
+            font-size: 18px;
+            color: var(--paragraph-color);
+            margin-bottom: 62px;
+        }
+
+        .ss-useCasesIndivsContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 62px;
+
+            .ss-useCasesIndivsInnerContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 12.1182vw;
+                justify-content: space-evenly;
+
+                .ss-useCasesIndivsItem {
+                    width: 9.5140vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .ss-useCasesIndivsItemSpan {
+                        color: var(--button-keyworld-color);
+                        font-size: 58px;
+                    }
+
+                    .ss-useCasesIndivsItemP {
+                        color: var(--paragraph-color);
+                        font-size: 18px;
+                    }
+                }
+
+                .ss-dashed {
+                    height: 111px;
+                    width: 1px;
+                    background-image: repeating-linear-gradient(180deg, #262626, #262626 10px, transparent 10px, transparent 20px);
+                    background-position: left top;
+                    background-repeat: repeat-y;
+                    background-size: 1px 100%;
+                }
+            }
+        }
+
+        .ss-useCasesIndivsButtonContainer {
+            .ss-useCasesIndivsButton {
+                border-radius: 82px;
+                padding: 18px 24px;
+                font-size: 18px;
+                color: white;
+                background-color: var(--second-color);
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.ss-useCases.ss-reverce {
+    flex-direction: row-reverse;
+}
+
+.ss-useCases.ss-reverce {
+    .WN_UseCaseCards {
+        background-image: url("/Bank_Project/assets/images/AbstractDesign/abstractDesign2.webp");
+        background-position: top right;
+    }
+}
+
+
+@media screen and (max-width : 1440px) {
+    .ss-useCases {
+        .WN_UseCaseCards {
+            width: 42.36vw;
+            padding: 40px;
+            margin-bottom: 40px;
+            gap: 10px;
+        }
+
+        .ss-useCasesIndivs {
+            width: 41vw;
+
+            .ss-useCasesIndivsTitle {
+                font-size: 26px;
+            }
+
+            .ss-useCasesIndivsDes {
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+            .ss-useCasesIndivsContainer {
+                margin-bottom: 50px;
+
+                .ss-useCasesIndivsInnerContainer {
+                    width: 12.96vw;
+
+                    .ss-useCasesIndivsItem {
+                        width: 9.4909vw;
+
+                        .ss-useCasesIndivsItemSpan {
+                            font-size: 40px;
+                        }
+
+                        .ss-useCasesIndivsItemP {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .ss-useCasesIndivsButtonContainer {
+                .ss-useCasesIndivsButton {
+                    padding: 14px 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .ss-useCases {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+        gap: 30px;
+
+        .WN_UseCaseCards {
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .ss-useCasesIndivs {
+            width: 100%;
+
+            .ss-useCasesIndivsTitle {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .ss-useCasesIndivsDes {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .ss-useCasesIndivsContainer {
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 0;
+
+                .ss-useCasesIndivsInnerContainer {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    .ss-useCasesIndivsItem {
+                        width: 72.067vw;
+                        margin-bottom: 30px;
+                        padding-bottom: 30px;
+                        padding-right: 0;
+
+                        .ss-useCasesIndivsItemSpan {
+                            font-size: 40px;
+                            margin: 0 auto 8px;
+                        }
+
+                        .ss-useCasesIndivsItemP {
+                            font-size: 14px;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .ss-dashed {
+                        height: 1px;
+                        width: 258px;
+                        background-image: repeating-linear-gradient(90deg, #262626, #262626 10px, transparent 10px, transparent 20px);
+                        background-position: left bottom;
+                        background-repeat: repeat-x;
+                        background-size: 100% 1px;
+                    }
+                }
+            }
+
+            .ss-useCasesIndivsButtonContainer {
+                display: flex;
+                justify-content: center;
+
+                .ss-useCasesIndivsButton {
+                    padding: 14px 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .ss-useCases.ss-reverce {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,174 @@
+.HA_JobOpeningsCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  transition: all 0.8 ease;
+
+  .HA_JobOpeningsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 50px;
+    border: 1px solid var(--second-color);
+    border-radius: 16px;
+    background-color: var(--third-color);
+
+    .head {
+      font-size: 30px;
+      color: var(--text-color);
+    }
+
+    .optionsContainer {
+      display: flex;
+      gap: 10px;
+
+      .HeadBtn {
+        font-size: 18px;
+        color: var(--paragraph-color);
+        border: 1px solid var(--second-color);
+        border-radius: 68px;
+        background-color: var(--third-color);
+        padding: 8px 16px;
+        margin-top: 14px;
+        white-space: nowrap;
+      }
+    }
+
+    .titleANDrequirementTitle {
+      padding: 50px 0px 20px 0px;
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--text-color);
+    }
+
+    .subTitleANDrequirements {
+      font-size: 18px;
+      color: var(--paragraph-color);
+      display: block;
+    }
+
+    .requirementsList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .img {
+        width: 22px;
+      }
+    }
+
+    .requirementItem {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: var(--button-keyworld-color);
+      padding: 2vh 2.1vw;
+      font-size: 18px;
+      color: var(--primary-color);
+      margin-top: 2.6vw;
+      border-radius: 82px;
+      border: none;
+      width: 157px;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .aa-btn-mt {
+      margin-top: 4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .HA_JobOpeningsCardWrapper {
+
+    gap: 20px;
+    transition: all 0.8 ease;
+
+    .HA_JobOpeningsCard {
+      padding: 2.7vw;
+
+      .head {
+        font-size: 24px;
+      }
+
+      .titleANDrequirementTitle {
+        font-size: 20px;
+      }
+
+      .subTitleANDrequirements {
+        font-size: 16px;
+      }
+
+      .btn {
+        font-size: 14px;
+        margin-top: 40px;
+        width: 115px;
+        padding: 12px 20px;
+      }
+
+      .aa-btn-mt {
+        margin-top: 64px;
+      }
+
+      .optionsContainer {
+        gap: 8px;
+
+        .HeadBtn {
+          margin-top: 10px;
+          padding: 6px 14px;
+          font-size: 16px;
+          transform: translateX(-10px);
+        }
+      }
+
+      .titleANDrequirementTitle {
+        padding: 40px 0px 16px 0px;
+      }
+
+      .requirementsList {
+        gap: 14px;
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .HA_JobOpeningsCardWrapper {
+    place-items: center;
+    grid-template-columns: 1fr;
+    transition: all 0.8 ease;
+
+    .HA_JobOpeningsCard {
+      padding: 5.55vh 5vw;
+      width: 100%;
+
+      .head {
+        font-size: 20px;
+      }
+
+      .optionsContainer {
+        flex-wrap: wrap;
+      }
+
+      .titleANDrequirementTitle {
+        font-size: 18px;
+      }
+
+      .subTitleANDrequirements {
+        font-size: 14px;
+      }
+
+      .btn {
+        font-size: 14px;
+      }
+    }
+  }
+}

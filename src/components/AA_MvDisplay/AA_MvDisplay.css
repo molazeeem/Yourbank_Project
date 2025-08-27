@@ -1,0 +1,5 @@
+.aa-mv-container {
+  background-color: var(--third-color);
+  display: flex;
+  flex-direction: column;
+}
